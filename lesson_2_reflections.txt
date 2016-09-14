@@ -1,0 +1,5 @@
+What happens when you initialize a repository? Why do you need to do it?
+When we initialize a repository using a git init command a empty directory .git is created in the same folder. It is needed to store the previous copies of the files.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+working directory is where we are operating on currently. Repository is where we have .git folder created to store the previous versions of the file. Staging area is intermediate step between working directory and repository. git add filename helps the files to be tracked(modified) and to be commited
