@@ -3,3 +3,22 @@ When we initialize a repository using a git init command a empty directory .git 
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 working directory is where we are operating on currently. Repository is where we have .git folder created to store the previous versions of the file. Staging area is intermediate step between working directory and repository. git add filename helps the files to be tracked(modified) and to be commited
+
+How can you use the staging area to make sure you have one commit per logical change?
+git diff can be used to compare the working directory and staging area. git diff --staged is used for comparison repository and staging area. With git status we can limit commiting logically separate changes  to same file.
+EX. change file a.txt for fix-1  stage it. Say fix-2 also requires change to a.txt. commit the change from fix-1 before staging the changes from fix-2.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches help to setup code for experimental features.  git branch gives the various branches. git branch branch-name creates the new branch. git checkout branch-name changes to the newly created  branch.
+
+How do the diagrams help you visualize the branch structure?
+Digarams help to understand the various brnaches created apart from master. recommendation to checkout the latest code from the branch and then commit there. Or you can fragment the branch further to check in your changes.
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merging two branches makes the commits to the checked out branch from the other branch. It is way of combining code. We represent it in diagram form to determine the corrrect point to merge. git merge branch1 branch2. If merge fails to abort git merge --abort.
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Pros:
+Reduces the hassle and automates the merge task for obvious commits. However it does notify us on the ambigious situations and hence it is not automatic in all cases. 
