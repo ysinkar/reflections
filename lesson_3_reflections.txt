@@ -4,3 +4,8 @@ Remote repository is useful for sharing code among multiple people and when ther
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 Any changes  made to local repo after the pull leads to merge and you would want to perform a merge at desired time rather than automatic.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Forks-To copy a repository on github if you do not have permissions to the original poster.
+clones-To copy a repository from github to local. to make changes to the forked repository
+branches- Can exist on both local and github. Used for feature implementation and making changes without affecting the master.
