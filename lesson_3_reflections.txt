@@ -11,4 +11,7 @@ clones-To copy a repository from github to local. to make changes to the forked 
 branches- Can exist on both local and github. Used for feature implementation and making changes without affecting the master.
 
 What is the benefit of having a copy of the last known state of the remote stored locally?
-It helps to track the commits made by other users to same repository after the last known state of the remote.
+It helps to track the commits made by other users to same repository after the last known state of the remote
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+CVS. It would be harder.
